@@ -27,6 +27,11 @@ namespace WebAppWithIndividualUserAccounts.Controllers
             return View();
         }
 
+        public IActionResult FruitsInjection()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

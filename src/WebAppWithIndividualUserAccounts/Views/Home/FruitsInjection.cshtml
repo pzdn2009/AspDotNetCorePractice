@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "FruitInjection";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+@inject WebAppWithIndividualUserAccounts.Services.FruitServices fruitService
+
+<h3>Fruit List</h3>
+<ul>
+    @foreach (var name in fruitService.GetFruits())
+    {
+        <li>@name</li>
+    }
+</ul>  
